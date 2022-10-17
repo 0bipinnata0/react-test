@@ -11,8 +11,9 @@ const Form = () => {
 
   const onChangeLength = (value: string) => {
     const parsedValue = parseInt(value);
-    if (!isNaN(parsedValue)) {
-      // TODO: fix error
+    if (isNaN(parsedValue)) {
+      setLength(0);
+    } else {
       setLength(parsedValue);
     }
   };
