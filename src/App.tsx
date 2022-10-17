@@ -1,8 +1,9 @@
+import Form from "./screens/Form";
 
 function App() {
   return (
     <div className="App">
-      hello
+      <Form />
     </div>
   );
 }
